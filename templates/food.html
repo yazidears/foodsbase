@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html> 
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FoodsBase</title>
+        <link rel="shortcut icon" href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png" type="image/x-icon">
+        <!--<link rel="stylesheet" href="home_style.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home_styles.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js" > </script>
+</head>
+	<body>
+		<h1 id='food name'>Food</h1>
+		<p id='keywords'>keywords</p>
+		<div id='price'>$0</div>
+		<p id='description'>There is currently no food to describe</p>
+		<div class="container">
+			<form action="action_page.php">
+		
+	
+			<label for="email">Email</label>
+			<input type="text" id="buyers_email" name="email" placeholder="Your email..">
+	
+	
+			<label for="Comments">Food Description</label>
+			<textarea type="text" id="comments" name="comments" placeholder="Type in any comments that you want the cook to see..." style="height:200px"></textarea>
+
+	
+
+	
+			<label for="quantity">Quantity available</label>
+			<input id="quantity" name="quantity" placeholder="Please specify the amount available here..." ></input>
+	
+		
+			<input type="submit" value="Submit" onclick="add_order()">
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FoodsBase</title>
+        <link rel="shortcut icon" href="https://b.zmtcdn.com/images/logo/zomato_logo_2017.png" type="image/x-icon">
+        <!--<link rel="stylesheet" href="home_style.css">-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/home_styles.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="script.js" > </script>
+</head>
+<body>
+    <div class="container">
+        <form action="action_page.php">
+    
+        <label for="fname">Description of what excersise you did</label>
+        <input type="text" id="exer_description" name="exer_description" placeholder="Type a small description of your exercise...">
+
+        <label for="gender">Gender</label>
+        <input type="text" id="gender" name="gender" placeholder="Please type in your gender here...">
+
+        <label for="weight">Weight</label>
+        <input type="text" id="weight" name="weight" placeholder="Please type in your weight...">
+
+        <label for="height">Height</label>
+        <input type="text" id="height" name="height" placeholder="Please type in your height...">
+
+        <label for="age">Age</label>
+        <input type="text" id="age" name="age" placeholder="Please type in your age">
+
+    
+
+
+    
+        <input type="submit" value="Submit">
+    
+        </form>
+    </div>
+</body>
+</html>
